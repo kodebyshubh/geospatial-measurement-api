@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Sample survey</name>
+    <Folder>
+      <name>Plots</name>
+      <Placemark>
+        <name>Plot A</name>
+        <ExtendedData><Data name="owner"><value>Ravi</value></Data></ExtendedData>
+        <Polygon><outerBoundaryIs><LinearRing><coordinates>
+          77.5900,12.9700 77.6000,12.9700 77.6000,12.9800 77.5900,12.9800 77.5900,12.9700
+        </coordinates></LinearRing></outerBoundaryIs></Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Plot B (with a pond)</name>
+        <Polygon>
+          <outerBoundaryIs><LinearRing><coordinates>
+            77.6100,12.9700 77.6200,12.9700 77.6200,12.9800 77.6100,12.9800 77.6100,12.9700
+          </coordinates></LinearRing></outerBoundaryIs>
+          <innerBoundaryIs><LinearRing><coordinates>
+            77.6130,12.9730 77.6170,12.9730 77.6170,12.9770 77.6130,12.9770 77.6130,12.9730
+          </coordinates></LinearRing></innerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Infrastructure</name>
+      <Placemark>
+        <name>Access road</name>
+        <LineString><coordinates>
+          77.5900,12.9650 77.5950,12.9690 77.6050,12.9690 77.6150,12.9650
+        </coordinates></LineString>
+      </Placemark>
+      <Placemark>
+        <name>Main gate</name>
+        <Point><coordinates>77.5950,12.9690,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
